@@ -11,6 +11,7 @@ import dev.frozenmilk.dairy.mercurial.continuations.IntoContinuation
 import dev.frozenmilk.dairy.mercurial.continuations.Scheduler
 import org.firstinspires.ftc.robotcore.external.Telemetry
 import org.firstinspires.ftc.robotcore.internal.opmode.OpModeMeta
+import java.util.HashMap
 import java.util.function.BooleanSupplier
 import java.util.function.Supplier
 
@@ -22,6 +23,7 @@ open class Context(
     @get:JvmName("telemetry") val telemetry: Telemetry,
     @get:JvmName("gamepad1") val gamepad1: Gamepad,
     @get:JvmName("gamepad2") val gamepad2: Gamepad,
+    @get:JvmName("blackboard") val blackboard: HashMap<String, in Any>,
 ) {
     @get:JvmName("state")
     val state

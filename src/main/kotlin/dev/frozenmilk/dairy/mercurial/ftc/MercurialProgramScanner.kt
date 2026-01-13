@@ -32,6 +32,7 @@ object MercurialProgramScanner : OpModeScanner() {
                 telemetry,
                 gamepad1,
                 gamepad2,
+                blackboard
             )
             context.run {
                 program.run {
